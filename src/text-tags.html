@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+	<meta name="author" content="Clemens, Stefano, Maris">
+	<meta name="version" content="Beta 0.0.1">
+    <title>EasyCode | Text-Tags</title>
+	<link rel="icon" href="background.jpg">
+    <style>
+    body {
+      font-family: "Arial", serif;
+    }
+
+    body p{
+      font-size: 20px;
+    }
+
+	.heading {
+		position: absolute;
+		left: 0%;
+		top: 0%;
+		width: 100%;
+		height: 9%;
+		color: white;
+		background-color: black;
+		text-align: center;
+	}
+
+	.main {
+		position: absolute;
+		left: 16%;
+		top: 9%;
+    right: 2%;
+	}
+
+	.sidenav {
+    	height: 100%;
+    	width: 190px;
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	background-color: black;
+    	padding-top: 20px;
+	}
+
+	.sidenav a {
+    	padding: 6px 8px 6px 16px;
+    	text-decoration: none;
+    	font-size: 25px;
+    	color: #818181;
+    	display: block;
+	}
+
+	.sidenav a:hover {
+    	color: #f1f1f1;
+	}
+
+	.einführung {
+	}
+	.geschichte {
+	}
+	.text-tags {
+		background-color: #81DAF5;
+	}
+	.aufzählungen {
+	}
+	.tags {
+	}
+    </style>
+  </head>
+  <body bgcolor="#81DAF5">
+	<div class="heading">
+		<h1>EasyCode - HTML</h1>
+	</div>
+	<div class="sidenav">
+  		<a href="index.html" class="einführung">Einführung</a>
+		<a href="geschichte.html" class="geschichte">Geschichte</a>
+  		<a href="text-tags.html" class="text-tags">Text-Tags</a>
+  		<a href="tabellen.html" class="tabellen">Tabellen</a>
+		<a href="aufzählungen.html" class="aufzählungen">Aufzählungen</a>
+		<a href="tags.html" class="tags">Tags</a>
+	</div>
+	<div class="main">
+    <h1 align="center"><b>Text-Tags</b></h1>
+		<p align="justify">In HTML kann man so gut wie alles darstellen, was man möchte. Einige Sachen sind einfach, andere etwas komplizierter. Oft verwendet man dafür z.B. CSS oder JavaScript.
+							Mit dem Tag <code><span><</span><span>p</span><span>></span></code> kann man Texte schreiben.<br>Hier zeigen wir dir, wie du Texte in HTML formatieren kannst. Hier sind ein paar Beispiele:</p>
+		<table border="1">
+			<thead>
+				<tr><td><b>Tag</b></td><td><b>Funktion</b></td><td><b>Geschlossener Tag?</b></td></tr>
+			</thead>
+			<tbody>
+				<tr><td><span><</span>b<span>></span></td><td>Texte fett machen</td><td>Ja</td></tr>
+				<tr><td><span><</span>i<span>></span></td><td>Texte kursiv machen</td><td>Ja</td></tr>
+				<tr><td><span><</span>u<span>></span></td><td>Texte unterstreichen</td><td>Ja</td></tr>
+				<tr><td><span><</span>s<span>></span></td><td>Texte durchstreichen</td><td>Ja</td></tr>
+			</tbody>
+			<tfoot>
+			</tfoot>
+		</table>
+		<br>
+		<p align="justify">So kann man Überschriften schreiben:</p>
+		<table border="1">
+			<thead>
+				<tr><td><b>Tag</b></td><td><b>Funktion</b></td><td><b>Geschlossener Tag?</b></td></tr>
+			</thead>
+			<tbody>
+				<tr><td><span><</span>h1<span>></span></td><td>Größte Überschrift</td><td>Ja</td></tr>
+				<tr><td><span><</span>h2<span>></span></td><td>Große Überschrift</td><td>Ja</td></tr>
+				<tr><td><span><</span>h3<span>></span></td><td>Mittelgroße Überschrift</td><td>Ja</td></tr>
+				<tr><td><span><</span>h4<span>></span></td><td>Kleine Überschrift</td><td>Ja</td></tr>
+				<tr><td><span><</span>h5<span>></span></td><td>Sehr Kleine Überschrift</td><td>Ja</td></tr>
+				<tr><td><span><</span>h6<span>></span></td><td>Kleinste Überschrift</td><td>Ja</td></tr>
+			</tbody>
+			<tfoot>
+			</tfoot>
+		</table>
+		<br>
+		<p align="justify">Du kannst auch Kommentare in HTML mit dem Kommentar-Tag schreiben.<br>Zum Beispiel:</p>
+		<p align="justify"><code style="font-size: 15px;"><span><</span>!--<span>Ich bin Ein Kommentar<span>--></span></code></p>
+	</div>
+  </body>
+</html>

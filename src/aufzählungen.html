@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+	<meta name="author" content="Clemens, Stefano, Maris">
+	<meta name="version" content="Beta 0.0.1">
+    <title>EasyCode | Aufzählungen</title>
+	<link rel="icon" href="background.jpg">
+    <style>
+    body {
+      font-family: "Arial", serif;
+    }
+
+    body p{
+      font-size: 20px;
+    }
+
+	.heading {
+		position: absolute;
+		left: 0%;
+		top: 0%;
+		width: 100%;
+		height: 9%;
+		color: white;
+		background-color: black;
+		text-align: center;
+	}
+
+	.main {
+		position: absolute;
+		left: 16%;
+		top: 9%;
+	}
+
+	.sidenav {
+    	height: 100%;
+    	width: 190px;
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	background-color: black;
+    	padding-top: 20px;
+	}
+
+	.sidenav a {
+    	padding: 6px 8px 6px 16px;
+    	text-decoration: none;
+    	font-size: 25px;
+    	color: #818181;
+    	display: block;
+	}
+
+	.sidenav a:hover {
+    	color: #f1f1f1;
+	}
+
+	.einführung {
+	}
+	.geschichte {
+	}
+	.text-tags {
+	}
+	.aufzählungen {
+		background-color: #81DAF5;
+	}
+	.tags {
+	}
+    </style>
+  </head>
+  <body bgcolor="#81DAF5">
+
+
+
+
+
+<div class="heading">
+		<h1>EasyCode - HTML</h1>
+	</div>
+	<div class="sidenav">
+  		<a href="index.html" class="einführung">Einführung</a>
+		<a href="geschichte.html" class="geschichte">Geschichte</a>
+  		<a href="text-tags.html" class="text-tags">Text-Tags</a>
+  		<a href="tabellen.html" class="tabellen">Tabellen</a>
+		<a href="aufzählungen.html" class="aufzählungen">Aufzählungen</a>
+		<a href="tags.html" class="tags">Tags</a>
+	</div>
+	<div class="main">
+		<h1 align="center"><b>Aufzählungen</b></h1>
+		<p>Mit einer Aufzählung kann man eine ordered-list (<i>meist</i> mit Zahlen strukturiert) und eine unordered-list (meist mit Punkten/Quadraten strukturiert) erstellen.
+		<br>
+			Eine ordered-list erstellt man mit dem <span><</span>ol<span>></span>-Tag und mit dem<span><</span>ul<span>></span>-Tag eine unordered-list.	
+		<br>
+			Für die einzelnen Listeneinträge benutzt man den <span><</span>li<span>></span>-Tag, schreibt dann das, was man da hinschreiben möchte hin, und schließt den Listeneintrag dann mit <span><</span>/li<span>></span>.
+		<br>
+			Sobald man den listeneintrag geschlossen hat, kann man einen neuen öffnen, was hinschreiben, und dann wieder schließen. So kann man immer weiter machen,bis man alle seine Punkte aufgezählt hat.
+		<br>
+			So würde ein Beispiel im Quelltext ausehen:</p>
+		<p>
+		<code style="font-size: 17px;">
+			<span><</span>ol<span>></span>
+			<br>
+	   		<span><</span>li<span>></span>blabla<span><</span>/li<span>></span>
+			<br>
+			<span><</span>li<span>></span>blabla<span><</span>/li<span>></span>
+			<br>
+			<span><</span>/ol<span>></span>
+		</code>
+		</p>
+		<p>Und so auf der Seite:</p>
+		<ol>
+		<li>blabla</li>
+		<li>blabla</li>
+		</ol>
+		<p>Wenn man die Art der Zahlen/Punkte ändern möchte, kann folgendes hinterschreiben: <code style="font-size: 17px;"><span><</span>ol <span>type="..."</span><span>></span></code>
+		<p>Für die <i>...</i> kann man die Art der Zeichen hin, wie z.B. <i>disc</i>.</p>
+		<br>
+		<br>
+		<p>Hier ist eine Tabelle für die Arten der Zeichen, die man für ol und ul einsetzen kann:</p>
+ 		<br>
+		<br>
+		<table border="1" >
+			<tr align="center"><td>Alle Attribute für ul</td><td>Alle Attribute für ol</td></tr>
+			<tr align="center"><td>disc</td><td>1</td> </tr>
+			<tr align="center"><td>square</td><td>A</td></tr>
+			<tr align="center"><td>circle</td><td>a</td></tr>
+			<tr align="center"><td>-</td><td>I</td></tr>
+			<tr align="center"><td>-</td><td>i</td></tr>
+		</table>
+		<br>
+		<br>
+		<br>
+		<p>Hier sind die Erklärungen, für das Aussehen der Attribute:</p>
+			<p>Für ul:</p>
+			<p>disc: Gefüllter Kreis</p>
+			<p>circle: Leerer Kreis</p>
+			<p>square: Gefülltes Quadrat</p>
+		<br>
+		<p>Für ol:</p>
+			<p>1: Zahlen ab 1 aufwärts</p>
+			<p>A: Buchtaben in Groß</p>
+			<p>a: Buchstaben in Klein</p>
+			<p>I: Römische Zahlen<p>
+			<p>i: Römische Zahlen in Klein</p>
+
+	</div>
+</body>
+</html>

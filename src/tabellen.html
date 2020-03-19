@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+	<meta name="author" content="Clemens, Stefano, Maris">
+	<meta name="version" content="Beta 0.0.1">
+    <title>EasyCode | Tabellen</title>
+	<link rel="icon" href="background.jpg">
+    <style>
+    body {
+      font-family: "Arial", serif;
+    }
+
+    body p{
+      font-size: 20px;
+    }
+
+	.heading {
+		position: absolute;
+		left: 0%;
+		top: 0%;
+		width: 100%;
+		height: 9%;
+		color: white;
+		background-color: black;
+		text-align: center;
+	}
+
+	.main {
+		position: absolute;
+		left: 16%;
+		top: 9%;
+		right: 2%;
+	}
+
+	.sidenav {
+    	height: 100%;
+    	width: 190px;
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	background-color: black;
+    	padding-top: 20px;
+	}
+
+	.sidenav a {
+    	padding: 6px 8px 6px 16px;
+    	text-decoration: none;
+    	font-size: 25px;
+    	color: #818181;
+    	display: block;
+	}
+
+	.sidenav a:hover {
+    	color: #f1f1f1;
+	}
+
+	.einführung {
+	}
+	.geschichte {
+	}
+	.text-tags {
+	}
+	.aufzählungen {
+	}
+	.tags {
+	}
+	.tabellen {
+		background-color: #81DAF5;
+	}
+    </style>
+  </head>
+  <body bgcolor="#81DAF5">
+	<div class="heading">
+		<h1>EasyCode - HTML</h1>
+	</div>
+	<div class="sidenav">
+  		<a href="index.html" class="einführung">Einführung</a>
+		<a href="geschichte.html" class="geschichte">Geschichte</a>
+  		<a href="text-tags.html" class="text-tags">Text-Tags</a>
+  		<a href="tabellen.html" class="tabellen">Tabellen</a>
+		<a href="aufzählungen.html" class="aufzählungen">Aufzählungen</a>
+		<a href="tags.html" class="tags">Tags</a>
+	</div>
+	<div class="main">
+		<h1 align="center"><b>Tabellen</b></h1>
+			<p align="justify">
+		<p>Tabellen sind eine andere Methode, Sachen in HTML zu strukturieren. Man kann sie so gestalten, wie man es haben möchte.
+		<br>
+			Eine Tabelle eröffnet man mit dem <span><</span>table<span>></span>-Tag und schließt sie wieder mit <span><</span>/table<span>></span>.
+		<br>
+			Damit die Tabelle einen Rand hat, muss man das Attribut <i>border="..."</i> in das <span><</span>table<span>></span>-Tag einsetzen.
+		<br>
+			Das würde dann wie folgt aussehen: <span><</span>table border="1"<span>></span>
+		<br>
+			Für die <i>...</i> kann man jede Zahl einsetzen. Je höher die Zahl, desto dicker der Rand.
+		<br>
+			In einer Tabelle kann man die Anzahl der Reihen mit dem <span><</span>tr<span>></span>-Tag bestimmen. Nach dem <span><</span>tr<span>></span>-Tag
+		<br>
+			kann man die Anzahl der Spalten und was drin stehen soll, mit dem <span><</span>td<span>></span> oder <span><</span>th<span>></span> bestimmen
+		<br>
+			Danach schließt man wieder <span><</span>td<span>></span>/<span><</span>th<span>></span> und am Ende der Reihe schließt man <span><</span>tr<span>></span>
+		<br>
+			So würde das ganze dann im Quelltext aussehen:</p>
+			<span><</span>table border="1"<span>></span><br>
+			<span><</span>tr<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>/tr<span>></span><br>
+			<span><</span>tr<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>/tr<span>></span><br>
+			<span><</span>tr<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>/tr<span>></span><br>
+			<span><</span>tr<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>/tr<span>></span><br>
+			<span><</span>/table<span>></span>
+		<br>
+		<p>So würde das dann vom Browser angezeigt werden:</p>
+		<table border="1">
+  			<tr><td>Blabla</td><td>Blabla</td></tr>
+  			<tr><td>Blabla</td><td>Blabla</td></tr>
+  			<tr><td>Blabla</td><td>Blabla</td></tr>
+  			<tr><td>Blabla</td><td>Blabla</td></tr>
+		</table>
+  		<br>
+		<br>
+		<p> Mit dem colspan-Attribut für <span><</span>td<span>></span>/<span><</span>th<span>></span> kann man Spalten doppelt, dreifach, usw. so lang machen.</p>
+		<p> Mit dem rowspan-Attribut für <span><</span>td<span>></span>/<span><</span>th<span>></span> kann man Spalten doppelt, dreifach, usw. so tief machen.</p>
+		<p> So würde das ganze dann aussehen:</p>
+		<br>
+		<table border="1">
+  			<tr><td colspan="2">Blabla</td><td>Blabla</td></tr>
+  			<tr><td rowspan="2" colspan="2">Blabla</td><td>Blabla</td></tr>
+  			<tr><td>Blabla</td></tr>
+  			<tr><td>Blabla</td><td>Blabla</td><td>Blabla</td></tr>
+		</table>
+		<p>Und so würde es dann im Quelltext ausshen:</p>
+		<br>
+		<span><</span>table border="1"<span>></span>
+		<br>
+  		<span><</span>tr<span>></span><span><</span>td colspan="2"<span>></span>Blabla<span><</span>/td<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>/tr<span>></span>
+		<br>
+  		<span><</span>tr<span>></span><span><</span>td rowspan="2" colspan="2"<span>></span>Blabla<span><</span>/td<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>/tr<span>></span>
+		<br>
+  		<span><</span>tr<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>/tr<span>></span>
+		<br>
+  		<span><</span>tr<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>td<span>></span>Blabla
+		<span><</span>/td<span>><span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>/tr<span>></span>
+		<br>
+  		<span><</span>/table<span>></span>
+		<br>
+		<br>
+  		<p>Es kann auch eine Kopf-, Körper- und Fußzeile in eine Tabelle eigebaut werden.</p>
+		<table border="1" width="300">
+  			<tr align="center"><td>Kopfzeile</td><td align="center"><span><</span>thead<span>></span></tr>
+  			<tr align="center"><td>Körperzeile</td><td align="center"><span><</span>tbody<span>></span></td></tr>
+  			<tr align="center"><td>Fußzeile</td><td align="center"><span><</span>tfoot<span>></span></td></tr>
+		</table>
+		<br>
+		<p>So würde das dann beispielsweise im Quelltext ausehen:</p>
+		<br>
+		<span><</span>table border="1"<span>></span>
+		<br>
+  		<span><</span>thead<span>></span>
+		<br>
+    	<span><</span>tr<span>></span>
+		<br>
+      	<span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span>
+		<br>
+      	<span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span>
+		<br>
+    	<span><</span>/tr<span>></span><br>
+  		<span><</span>/thead<span>></span><br>
+  		<span><</span>tbody<span>></span><br>
+    	<span><</span>tr<span>></span><br>
+      	<span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><br>
+      	<span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><br>
+    	<span><</span>/tr<span>></span><br>
+    	<span><</span>tr<span>></span><br>
+      	<span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><br>
+      	<span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><br>
+    	<span><</span>/tr<span>></span><br>
+  		<span><</span>/tbody<span>></span><br>
+  		<span><</span>tfoot<span>></span><br>
+    	<span><</span>tr<span>></span><br>
+      	<span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><br>
+      	<span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><span><</span>td<span>></span>Blabla<span><</span>/td<span>></span><br>
+    	<span><</span>/tr<span>></span><br>
+  		<span><</span>/tfoot<span>></span><br>
+		<span><</span>/table<span>></span>
+		<br>
+		<p>Und so würde das ganze im Browser ausehen:</p>
+		<br>
+		<table border="1">
+  		<thead>
+    		<tr>
+      			<td>Blabla</td><td>Blabla</td>
+      			<td>Blabla</td><td>Blabla</td>
+    		</tr>
+  		</thead>
+  		<tbody>
+    		<tr>
+      			<td>Blabla</td><td>Blabla</td>
+      			<td>Blabla</td><td>Blabla</td>
+    		</tr>
+    		<tr>
+      			<td>Blabla</td><td>Blabla</td>
+      			<td>Blabla</td><td>Blabla</td>
+    		</tr>
+  		</tbody>
+  		<tfoot>
+    		<tr>
+				<td>Blabla</td><td>Blabla</td>
+      			<td>Blabla</td><td>Blabla</td>
+			</tr>
+  		</tfoot>
+		</table>
+	</div>
+</body>
+</html>
