@@ -1,4 +1,4 @@
-EasyCode - by KasparTech
+# EasyCode
 
-Version: 1.0
+Version: 1.0\
 Developer: Clemens, Stefano, Maris
